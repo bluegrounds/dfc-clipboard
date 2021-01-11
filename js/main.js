@@ -1,12 +1,14 @@
-let copyRtlBtn = document.querySelector('.trigger-copy-rtl');
-let copyLtrBtn = document.querySelector('.trigger-copy-ltr');
+let copyRtlButtons = document.querySelectorAll('.trigger-copy-rtl');
+let copyLtrButtons = document.querySelectorAll('.trigger-copy-ltr');
 
-copyRtlBtn.addEventListener('click', function(event) {
-  copyTextToClipboard(`⁧`);
-  alert("Copied!");
-});
+for(let btn of copyRtlButtons)
+  btn.addEventListener('click', function(event) {
+    copyTextToClipboard(`⁧`);
+    alert("Copied!");
+  });
 
-copyLtrBtn.addEventListener('click', function(event) {
-  copyTextToClipboard(`⁦`);
-  alert("Copied!");
-});
+for(let btn of copyLtrButtons)
+  btn.addEventListener('click', function(event) {
+    copyTextToClipboard(`⁦`);
+    alert("Copied!");
+  });

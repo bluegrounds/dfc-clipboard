@@ -261,3 +261,12 @@ textarea {
   }
 }
 
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.trigger-link:hover {
+  cursor: pointer;
+  color: blue;
+}
